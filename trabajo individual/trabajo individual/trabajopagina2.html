@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/stylus.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
     <title>Escuela para aprender a ser adulto</title>
 </head>
 <body class="container-sm container-md container-lg">
@@ -36,15 +37,78 @@
       </div>
     </nav>
   </header> 
-  <main>
- <p class="pa">Te dejamos algunas imagenes de nuestras juntas</p>
- <br/>
- <img class="imagenes" src="./imgProyInd/gal1.jpg" alt="foto1">
- <img class="imagenes" src="./imgProyInd/gal2.jpg" alt="foto2">
- <img class="imagenes" src="./imgProyInd/gal3.jpg" alt="foto3">
- <img class="imagenes" src="./imgProyInd/gal4.jpg" alt="foto4">
- <img class="imagenes" src="./imgProyInd/gal5.jpg" alt="foto5">
- <img class="imagenes" src="./imgProyInd/gal6.jpg" alt="foto6">
+<main>
+ <h1 class="mt-12 mb-8 px-6 text-center text-lg md:text-2xl font-semibold">
+ Te dejamos algunas imagenes de nuestras juntas
+</h1>
+<div id="mainCarousel" class="carousel w-10/12 max-w-5xl mx-auto">
+  <div
+    class="carousel__slide"
+    data-src="./imgProyInd/gal1.jpg"
+    data-fancybox="gallery"
+    data-caption="Hola">
+    <img src="./imgProyInd/gal1.jpg" />
+  </div>
+  <div
+    class="carousel__slide"
+    data-src="./imgProyInd/gal2.jpg"
+    data-fancybox="gallery"
+    data-caption="Hola">
+    <img src="./imgProyInd/gal2.jpg" />
+  </div>
+  <div
+    class="carousel__slide"
+    data-src="./imgProyInd/index1.jpg"
+    data-fancybox="gallery"
+    data-caption="Hello 🖐"
+  >
+    <img src="./imgProyInd/index1.jpg" />
+  </div>
+  <div
+    class="carousel__slide"
+    data-src="./imgProyInd/gal4.jpg"
+    data-fancybox="gallery"
+    data-caption="Another caption"
+  >
+    <img src="./imgProyInd/gal4.jpg" />
+  </div>
+  <div
+    class="carousel__slide"
+    data-src="./imgProyInd/gal5.jpg"
+    data-fancybox="gallery"
+  >
+    <img src="./imgProyInd/gal5.jpg" />
+  </div>
+  <div
+    class="carousel__slide"
+    data-src="./imgProyInd/gal6.jpg"
+    data-fancybox="gallery"
+  >
+    <img src="./imgProyInd/gal6.jpg" />
+  </div>
+</div>
+<div id="thumbCarousel" class="carousel max-w-xl mx-auto">
+  <div class="carousel__slide">
+    <img class="panzoom__content" src="./imgProyInd/gal1.jpg" />
+  </div>
+  <div class="carousel__slide">
+    <img class="panzoom__content" src="./imgProyInd/gal2.jpg" />
+  </div>
+  <div class="carousel__slide">
+    <img class="panzoom__content" src="./imgProyInd/index1.jpg" />
+  </div>
+  <div class="carousel__slide">
+    <img class="panzoom__content" src="./imgProyInd/gal4.jpg" />
+  </div>
+  
+  <div class="carousel__slide">
+    <img class="panzoom__content" src="./imgProyInd/gal5.jpg" />
+  </div>
+  <div class="carousel__slide">
+    <img class="panzoom__content" src="./imgProyInd/gal6.jpg" />
+  </div>
+</div>
+
 
 </main>
   <footer>
@@ -53,6 +117,8 @@
     <address>monster,inc. avda evergreen 142, Springfield de Chile </address>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="./assets/js/main.js" ></script>
 </body>
 </html>
